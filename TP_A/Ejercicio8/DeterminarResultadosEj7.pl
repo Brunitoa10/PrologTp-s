@@ -1,0 +1,8 @@
+?- 2 \= 2.          % false (2 es igual a 2)
+?- 2 \= 1+1.        % true (Prolog no evalúa expresiones aritméticas con \=/2)
+?- 1+1 \= 0+2.      % true (Las estructuras son diferentes, no se evalúan)
+?- X \= 5*8.        % false (X puede unificarse con 5*8)
+?- X*1 \= 2*1.      % true (Las estructuras son diferentes, sin evaluación)
+?- X-3 \= 5-Y.      % false (X-3 puede unificarse con 5-Y, solo son variables)
+?- X-3 \= 5-X.      % true (No hay una unificación posible sin generar un error)
+?- 2*(8-3) \= 2*X.  % true (Las estructuras son distintas, sin evaluación)
