@@ -1,4 +1,4 @@
-:- dynamic b/0, c/0, d/0, e/0, f/0, g/0.  % Declarar predicados dinámicos
+:- dynamic e/0, f/0, g/0.  % Declarar predicados dinámicos
 
 a :- b, c.    % Regla 1: a es verdadero si b y c son verdaderos
 b :- d, e.    % Regla 2: b es verdadero si d y e son verdaderos
@@ -10,4 +10,4 @@ e.  % e es verdadero
 f.  % f es verdadero
 g :- e, f.  % g es verdadero si e y f son verdaderos
 
-%SALIDA -> TRUE.
+%SALIDA A-> TRUE.
