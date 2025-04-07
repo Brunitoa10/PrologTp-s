@@ -32,4 +32,4 @@ mes_dias_anio(M, _, Y) :-
 % ?- mes_dias_anio(marzo, 2023, D).   % Debería retornar D = 31
 
 %OBSERVACION
-    % ! es un corte a la recursion
+    % ! “Si llegaste hasta acá y esta regla se cumplió, no sigas probando otras alternativas”.
