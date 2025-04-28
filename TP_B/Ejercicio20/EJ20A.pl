@@ -1,0 +1,1 @@
+crearArbolVacio(nil).
